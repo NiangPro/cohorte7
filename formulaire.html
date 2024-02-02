@@ -6,31 +6,60 @@
     <title>Les formulaires en html</title>
 </head>
 <body>
-    <h1>Formulaire d'inscription</h1>
-    <form action="">
-        <label for="">Prénom</label>
-        <input type="text" placeholder="Entrer votre prénom"><br><br>
-        <label for="">Nom</label>
-        <input type="text" placeholder="Entrer votre nom"><br><br>
-        <label for="">Date de naissance</label>
-        <input type="date"><br><br>
-        <input type="datetime-local"><br><br>
-        <input type="time"><br><br>
-        <label for="">Sexe</label>
-        M <input type="radio"  name="modou"> 
-        F <input type="radio" checked name="modou"> <br><br>
-        <label for="">Pays</label>
-        <select>
-            <option value="">Veuillez selectionner un pays</option>
-            <option value="">Senegal</option>
-            <option value="">Côte d'ivoire</option>
-            <option value="">Guinée Conakry</option>
-        </select><br><br>
-        <label for="">Langue</label>
-        Anglais <input type="checkbox">
-        Français <input type="checkbox"><br><br>
-        <input type="reset" value="Annuler">
-        <input type="submit" value="S'inscrire">
-    </form>
+
+    <details>
+        <summary>Texte à cacher</summary>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eius tempore possimus expedita sint nostrum aspernatur vero aperiam nemo laboriosam eum corrupti, ipsa cumque rem! Fugit 
+            beatae error blanditiis laudantium.
+        </p>
+    </details>
+
+
+    <fieldset>
+        <legend align="center">Formulaire d'inscription</legend>
+        <form action="">
+            <label for="">Prénom</label>
+            <input type="text" placeholder="Entrer votre prénom" minlength="5" maxlength="10" required><br><br>
+            <label for="">Nom</label>
+            <input type="text" placeholder="Entrer votre nom"><br><br>
+            <label for="">Numero de telephone</label>
+            <input type="tel" placeholder="Entrer votre numéro de téléphone"><br><br>
+            <label for="">Sexe</label><br>
+            M <input type="radio" name="sexe"> 
+            F <input type="radio" name="sexe"><br><br>
+            <label for="">Langues</label><br>
+            Chinois <input type="checkbox">
+            Français <input type="checkbox" checked>
+            Anglais <input type="checkbox"><br><br>
+            <label for="">Date de naissance</label>
+            <input type="date"><br><br>
+            <label for="">Pays</label>
+            <select name="" id="">
+                <option value="">Selectionner un pays</option>
+                <option value="">Senegal</option>
+                <option value="">Mali</option>
+                <option value="">Gambie</option>
+                <option value="">Mauritanie</option>
+            </select><br><br>
+            <label for="">Couleur</label>
+            <input type="color"><br><br>
+            <label for="">Plage</label>
+            <input type="range"><br><br>
+            <label for="">Selectionner un fichier</label>
+            <input type="file"><br><br>
+            <label for="">Description</label><br>
+            <textarea name="" id=""></textarea><br><br>
+            <label for="">Email</label>
+            <input type="email" placeholder="Entrer votre adresse mail"><br><br>
+            <label for="">Mot de passe</label>
+            <input type="password" placeholder="Entrer votre mot de passe"><br><br>
+            <label for="">Age</label>
+            <input type="number" min="0" step="5" max="20"><br><br>
+            <input type="reset" value="Annuler">
+            <button type="submit">Envoyer</button>
+
+        </form>
+    </fieldset>
 </body>
 </html>
