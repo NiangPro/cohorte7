@@ -1,0 +1,21 @@
+#titre{
+    color: cyan;
+    text-shadow: 5px 5px 2px grey;
+    box-shadow: 3px 3px 3px darkcyan;
+}
+
+#lien{
+    text-decoration: none;
+    color: yellow;
+}
+.lien{
+    color: purple;
+}
+
+a{
+    color: red;
+}
+
+*{
+    font-family: "Algerian";
+}
