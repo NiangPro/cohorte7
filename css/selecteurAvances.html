@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les selecteurs avancés en css</title>
+    <style>
+        h1, h2, h3{
+            font-size: 34px;
+            color: blue;
+            text-decoration: underline;
+            font-family: 'algerian';
+        }
+
+       #para > a{
+            text-decoration: none;
+            color: red;
+        }
+
+        #para   h3{
+            color: yellow;
+        }
+
+        input[type="text"]{
+            width: 300px;
+            outline: none;
+             border-radius: 10px; /*tous les coins
+            border-radius: 25px 5px; 25 --> en haut et en bas, 5 à droite et à gauche*/
+            /* border-radius: 25px 0px 30px 10px; top right bottom left */
+        }
+
+        input[type="submit"]{
+            border: none;
+            color: white;
+            background: green;
+            border-radius: 10px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        input[type="reset"]{
+            background-color: red;
+            border: none;
+            border-radius: 10px;
+            font-size: 14px;
+            cursor: pointer;
+            color: white;
+        }
+
+        input[type="submit"]:hover{
+            background: orange;
+            transition: 3s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Introduction</h1>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing.
+        <a href=""> Je suis le lien numero 1</a>
+    </p>
+    <h2>Développement</h2>
+    <p id="para">
+        <a href="" > Je suis le lien numero 2</a>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, amet.
+    </p>
+    <h3>Conclusion</h3>
+    <p>
+        <a href="" > Je suis le lien numero 3</a>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, nostrum incidunt rerum, maiores corporis explicabo expedita harum tenetur quae nesciunt voluptatibus, 
+        cum iusto autem modi soluta sapiente aut assumenda. Ut.
+    </p>
+
+    <form action="">
+        <label for="">Prenom</label><br>
+        <input type="text" class="custom"><br>
+        <label for="">Nom</label><br>
+        <input type="text" class="custom"><br>
+        <label for="">Sexe</label><br>
+        M<input type="radio">F<input type="radio"><br>
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Annuler">
+    </form>
+</body>
+</html>
