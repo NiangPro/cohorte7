@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: rgb(244, 243, 243);
+        }
+        #form{
+            width: 400px;
+            box-shadow: 2px 2px 2px grey, -2px -2px 2px grey;
+            border-radius: 10px;
+            margin: auto;
+            padding: 10px;
+        }
+
+        #form h3{
+            text-align: center;
+            font-family: Algerian;
+            text-shadow: 2px  2px 2px cyan;
+        }
+
+        label{
+            font-weight: bold;
+        }
+
+        input{
+            width: 90%;
+            margin-bottom: 10px;
+            padding-left: 10px;
+            height: 25px;
+            outline: none;
+            border-width: 5px;
+            border-color: cyan;
+            border-style: outset;
+        }
+
+        #send{
+            border: none;
+            padding: 8px;
+            border-radius: 10px;
+            background: green;
+            color: white;
+            cursor: pointer;
+        }
+
+        #send:hover{
+            background: lightgreen;
+            transition: .9s;
+            color: black;
+        }
+
+        #cancel:hover{
+            background: darkred;
+            padding: 8px 15px;
+            transition: .9s;
+        }
+
+        #cancel{
+            border: none;
+            padding: 8px;
+            border-radius: 10px;
+            background: red;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="form">
+        <h3>Formulaire d'inscription</h3>
+        <form action="">
+            <label for="">Prenom</label><br>
+            <input type="text" placeholder="Entrer votre prenom"><br>
+            <label for="">Nom</label><br>
+            <input type="text"placeholder="Entrer votre nom"><br>
+            <label for="">Email</label><br>
+            <input type="email"placeholder="Entrer votre email"><br>
+            <label for="">Mot de passe</label><br>
+            <input type="password"placeholder="Entrer votre mot de passe"><br>
+            <button type="submit" id="send">Envoyer</button>
+            <button type="reset" id="cancel">Annuler</button>
+        </form>
+    </div>
+</body>
+</html>
