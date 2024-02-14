@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les modeles de boites en css</title>
+    <style>
+        #boites{
+            margin: auto;
+            border: 1px outset #000;
+            padding: 10px;
+            /* margin: 50px 0px 0px 20px; */
+            margin-bottom: 30px;
+            width: 400px;
+            box-shadow: 3px 3px 3px grey, -3px -3px 3px grey;
+            height: 400px;
+        }
+        .boite{
+            border: 1px solid cyan;
+            margin-bottom: 10px;
+            padding-left: 20px;
+        }
+
+        #lien{
+            text-decoration: none;
+            border-right: 5px double #000;
+            padding: 5px;
+            border-radius: 10px;
+            background: lightseagreen;
+            color: white;
+            width: 100px;
+            height: 20px;
+            text-align: center;
+        }
+
+        #lien:hover{
+            border-right: none;
+            border-left: 5px double cyan;
+            transition: 1s;
+            background: #000;
+           padding: 10px;
+           transform: rotate(-45deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="boites">
+        <div class="boite">
+            Boite 1
+        </div>
+        <div class="boite">
+            Boite 2
+        </div>
+    </div>
+
+    <div href="" id="lien">Ajouter</div>
+</body>
+</html>
