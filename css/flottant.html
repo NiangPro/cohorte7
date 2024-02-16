@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flottant</title>
+    <style>
+        ul{
+            list-style-type: none;
+            float: right;
+            margin-bottom: 50px;
+        }
+        li{
+            margin-bottom: 10px;
+            text-align: center;
+            width: 150px;
+            display: inline-block;
+            height: 30px;
+            line-height: 30px;
+            font-size: 15px;
+        }
+
+        li a{
+            color: black;
+            text-decoration: none;
+        }
+
+        li:hover{
+            background: purple;
+            transition: 0.6s;
+        }
+
+        li:hover a{
+            color: yellow;
+        }
+
+        #droite, #gauche{
+            border: 1px solid #000;
+            display: inline-block;
+        }
+
+        #droite{
+            width: 475px;
+        }
+
+        #gauche{
+            width: 475px;
+        } 
+    </style>
+</head>
+<body>
+    <div style="height: 50px;">
+        <ul>
+            <li><a href="">Accueil</a></li>
+            <li><a href="">Formations</a></li>
+            <li><a href="">Competences</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </div>
+    
+    <div id="gauche">
+        Partie Gauche
+    </div>
+    <div id="droite">
+        Partie Droite
+    </div>
+    
+</body>
+</html>

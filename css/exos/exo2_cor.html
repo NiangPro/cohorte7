@@ -5,12 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            background: rgb(243, 243, 243);
+        }
+        form{
+            width: 360px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 3px grey, -2px -2px 3px grey;
+        }
 
+        h3{
+            text-align: center;
+            font-weight: bold;
+            font-family: algerian;
+            text-shadow: 2px  2px  3px cyan;
+            font-size: 14px;
+        }
+
+        label{
+            font-weight: bold;
+        }
+
+        input{
+            width: 98%;
+            border: 5px outset cyan;
+            margin-bottom: 15px;
+            padding: 5px;
+            outline: none;
+        }
+
+        #send{
+            background: green;
+            border: none;
+            color: white;
+            border-radius: 10px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #cancel{
+            background: red;
+            border: none;
+            color: white;
+            border-radius: 10px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #send:hover{
+            color: black;
+            background: lightgreen;
+            transition: 0.9s;
+        }
+
+        #cancel:hover{
+            background: darkred;
+            padding: 10px 20px;
+            transition: 0.9s;
+        }
     </style>
 </head>
 <body>
     <form action="">
         <h3>Formulaire d'inscription</h3>
+        <label for="">Prenom</label><br>
+        <input type="text" placeholder="Entrer votre prénom"><br>
+        <label for="">Nom</label><br>
+        <input type="text" placeholder="Entrer votre nom"><br>
+        <label for="">Email</label><br>
+        <input type="email" placeholder="Entrer votre email"><br>
+        <label for="">Mot de passe</label><br>
+        <input type="password" placeholder="Entrer votre mot de passe"><br>
+        <button type="submit" id="send">Envoyer</button>
+        <button type="reset" id="cancel">Annuler</button>
     </form>
 </body>
 </html>
