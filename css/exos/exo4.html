@@ -6,7 +6,7 @@
     <title>Document</title>
     <style>
         fieldset{
-            width: 600px;
+            width: 400px;
             margin: auto;
         }
         legend{
@@ -19,8 +19,23 @@
             row-gap: 30px;
         }
 
+        .gender-part{
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+        }
+
         label{
             display: block;
+        }
+
+        input{
+            outline: none;
+        }
+
+        .btn-group{
+            margin-top: 30px;
+            float: right;
+            margin-right: 50px;
         }
     </style>
 </head>
@@ -34,17 +49,38 @@
                     <input type="text">
                 </div>
                 <div class="form-group">
-                    <label for="">Prenom</label>
+                    <label for="">Nom</label>
                     <input type="text">
                 </div>
                 <div class="form-group">
-                    <label for="">Prenom</label>
+                    <label for="">Adresse</label>
                     <input type="text">
                 </div>
                 <div class="form-group">
-                    <label for="">Prenom</label>
+                    <label for="">Tel</label>
                     <input type="text">
                 </div>
+                <div class="form-group">
+                    <label for="">Sexe</label>
+                    <div class="gender-part">
+                        <div class="male">
+                            <label for="">M</label>
+                            <input type="radio" name="Sexe">
+                        </div>
+                        <div class="female">
+                            <label for="">F</label>
+                            <input type="radio" name="Sexe">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="">Email</label>
+                    <input type="email">
+                </div>
+            </div>
+            <div class="btn-group">
+                <button type="reset">Annuler</button>
+                <button type="submit">ENvoyer</button>
             </div>
         </form>
     </fieldset>
