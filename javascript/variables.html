@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les variables</title>
+</head>
+<body>
+    
+
+    <script >
+
+        /*declaration des variables  */
+        let prenom = "Modou";
+        var nom;
+        nom = "Ba";
+        var sexe = 'Feminin';
+        let age = 34;
+        let decimal = 45.4;
+
+        let estVrai = false;
+
+        /*les methodes d'affichages */
+
+        /* alert("Bonjour") */
+        document.write(`
+        <h1> Mon titre </h1>
+        <h2> Mon titre </h2>
+        `)
+
+        document.write("Votre prenom est "+prenom)
+        document.write(`Votre nom est ${nom} et votre age est ${age} ans`)
+        document.write("Votre nom est "+nom+"et votre age est "+age+" ans")
+        
+
+        console.log("Au niveau de la console")
+
+        let p =prompt('Entrer votre prenom')
+
+        alert("Vous avez saisi :"+p)
+
+
+    </script>
+</body>
+</html>
