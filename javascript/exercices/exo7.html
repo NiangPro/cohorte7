@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let code = prompt("Entrer le code orange money");
+
+        if (code == "#144#") {
+            let choix = prompt(`
+                *********** MENU ORANGE MONEY ************
+                1: Solde de mes comptes
+                2: Transfert d'argent
+                3: Paiement de facture
+                4: Achats: Crédit et Pass
+                5: Paiement biens et services
+                6: Dons et cotisations
+                7: Options
+                8: Banque et assurance
+                9: Jeux
+            `);
+
+            switch (choix) {
+                case "1":
+                    choix = prompt(`
+                        1: Solde compte Orange Money
+                        2: Mon salaire
+                        3: Reception internationale
+                        4: Compteur KDO
+                    `);
+
+                    switch (choix) {
+                        case "1":
+                            alert("Votre solde est de 150000000000 FCFA");
+                            break;
+                    
+                        default:
+                            alert("Choix indisponible");
+                            break;
+                    }
+                    break;
+            
+                default:
+                    alert("Choix indisponible")
+                    break;
+            }
+        }else{
+            alert("Le code ne correspond pas au code orange money");
+        }
+    </script>
+</body>
+</html>

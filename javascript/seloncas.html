@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch - cas</title>
+</head>
+<body>
+    <script>
+        let choix = prompt(`
+                ******* MENU NDOGOU *****
+                1- Pain
+                2- Pain chocolat
+                3- Poulet
+                4- Pain beurre
+                FAITES VOTRE CHOIX
+        `);
+
+        switch(choix){
+            case "1": 
+                    alert("Vous avez choisi Pain");
+            break;
+            case "2": 
+                    alert("Vous avez choisi pain chocolat");
+            break;
+            case "3": 
+                    alert("Vous avez choisi poulet");
+            break;
+            case "4": 
+                alert("Vous avez choisi pain beurre");
+            break;
+            default: 
+                alert("Choix indisponible");
+            break;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let note = parseFloat(prompt("Entrer la note"));
+
+        if(note > 20){
+            document.write("La note ne peut pas depasser 20");
+        }else if(note > 17){
+            document.write("Excellent");
+        }else if(note >= 16){
+            document.write("Tres bien");
+        }else if(note >= 14){
+            document.write("bien");
+        }else if(note >= 13){
+            document.write("ABien");
+        }else if(note >= 10){
+            document.write("Passable")
+        }else if(note < 10 && note >= 0){
+            document.write("Mediocre");
+        }else{
+            document.write("La note minimale est de 0");
+        }
+    </script>
+</body>
+</html>
