@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faire Tant Que</title>
+</head>
+<body>
+    <script>
+
+        // initialisation
+        let i = 1;
+        let d1 = new Date();
+        do{
+
+            document.write(i + " - ")
+            // incrémentation
+            i++;
+        }while(i <= 1000000);
+        let d2 = new Date();
+
+        document.write(`Date debut : ${d1.getHours()}h${d1.getMinutes()} mn ${d1.getSeconds()}s`)
+        document.write(`<br>Date fin : ${d2.getHours()}h${d2.getMinutes()} mn ${d2.getSeconds()}s`)
+    </script>
+</body>
+</html>

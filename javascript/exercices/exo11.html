@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nombre = parseInt(prompt("Veuillez saisir un nombre entier"));
+        // let diviseurs = '';
+
+        if (nombre > 0) {
+            let somme = 0;
+
+            // utilisation de la boucle for 
+            // for(let i = 1; i < nombre; i++){
+            //     if(nombre % i == 0){
+            //         somme += i;
+            //         // somme = somme + i;
+            //         // diviseurs += "- " + i;
+            //     }
+            // }
+
+            // utilisation de la boucle while 
+            let i = 1;
+            while(i < nombre){
+                if (nombre % i == 0) {
+                    somme += i;
+                }
+                i++;
+            }
+
+            if (somme == nombre) {
+                document.write(`${nombre} est un nombre parfait`)
+            }else{
+                document.write(`${nombre} n'est pas un nombre parfait`);
+            }
+            // document.write(`Voici les diviseurs : ${diviseurs}`);
+        }else{
+            alert("Veuillez saisir un nombre positif")
+        }
+    </script>
+</body>
+</html>

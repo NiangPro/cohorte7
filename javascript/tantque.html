@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boucle tant que</title>
+</head>
+<body>
+    <script>
+
+        let tentative = 3;
+        let n = parseInt(prompt("Entrer 2"));
+
+        while(tentative > 1){
+            tentative--;
+            n = parseInt(prompt(`Veuillez saisir 2, il vous ${tentative} tentative` ));
+        }
+
+        document.write(`Le nombre de tentative ${tentative} <br>`)
+        // initialisation 
+        let i = 0;
+        // condition 
+        while(i < 1000){
+            // incrementation 
+            i++;
+            // traitement 
+            document.write(i+' - ');
+        }
+    </script>
+</body>
+</html>
