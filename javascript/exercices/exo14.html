@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nombre = parseInt(prompt("Entrer un nombre entier"))
+
+        let som = 0, cpt = 0;
+
+        for (let i = 1; i < nombre; i++) {
+            if (nombre % i == 0) {
+                cpt++;
+                som = som + i ;
+            }
+        }
+
+        if (cpt == 1 || nombre == 1) {
+            document.write(`${nombre} est un nombre premier <br>`)
+        }else{
+            document.write(`${nombre} n'est pas un nombre premier <br>`)
+        }
+
+        if (som == nombre) {
+            document.write(`${nombre} est un nombre parfait <br>`)
+        }else{
+            document.write(`${nombre} n'est pas un nombre parfait <br>`)
+        }
+    </script>
+</body>
+</html>
