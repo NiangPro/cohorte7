@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les différentes types de fonction</title>
+</head>
+<body>
+    <script>
+        // fonction simple 
+        function addition(x, y){
+            document.write(`${x} + ${y} = ${x + y}<br>`)
+        }
+
+        // fonction anonyme 
+        let produit = function(x, y){
+            document.write(`${x} x ${y} = ${x * y}<br>`)
+        }
+
+        // fonction flêchée 
+        let difference = (x, y) => {
+            document.write(`${x} - ${y} = ${x - y}<br>`)
+        }
+
+        // appel des fonctions 
+        addition(4, 6);
+        produit(9, 7);
+        difference(5, 25);
+        
+    </script>
+</body>
+</html>

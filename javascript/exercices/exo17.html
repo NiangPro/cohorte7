@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function premierParfait(nombre){
+            let compteur = 0, somme = 0;
+
+            for (let i = 1; i < nombre; i++) {
+                if (nombre % i == 0) {
+                    compteur++;
+                    somme += i;
+                }                
+            }
+
+            compteur == 1 || nombre == 1 
+            ? document.write(`${nombre} est un nombre premier <br>`)
+            : document.write(`${nombre} n'est pas un nombre premier <br>`);
+
+            somme == nombre
+            ? document.write(`${nombre} est un nombre parfait`)
+            : document.write(`${nombre} n'est pas un nombre parfait`);
+        }
+
+        function nombreCarre(nombre){
+            nombre == (parseInt(Math.sqrt(nombre)) * parseInt(Math.sqrt(nombre)))
+            ? document.write(`${nombre} est un nombre carré`)
+            : document.write(`${nombre} n'est pas un nombre carré`);
+        }
+
+        let n = parseInt(prompt("Veuillez saisir un nombre entier"))
+
+        nombreCarre(n);
+
+    </script>
+</body>
+</html>
