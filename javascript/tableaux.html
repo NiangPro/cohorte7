@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les tableaux en javascript</title>
+</head>
+<body>
+    <script>
+        // déclaration d'un tableau 
+        let tableau = ["moussa", 13, true, "Diallo"];
+        var tableau2 = new Array("Pathe", "Alioune", "Marie");
+
+        // la taille ou le nombre d'élèments du tableau 
+        document.write(`La taille du tableau de ${tableau.length} élèments`)
+
+        // Recupérer un élèment dans un tableau 
+        document.write(`<br>${tableau.at(0)}<br>`)
+
+        // insérer à la 1ère position 
+        tableau.unshift("Amar");
+
+        // insérer à la dernière position 
+        tableau.push("Ndiaye");
+
+        // supprimer le 1er élèment 
+        tableau.shift();
+
+        // supprimer le dernier élèment 
+        tableau.pop();
+
+        // parcours du tableau 
+        for(let i = 0; i < tableau.length; i++){
+            document.write(tableau[i] + ' - ');
+        }
+    </script>
+</body>
+</html>
