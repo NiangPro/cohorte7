@@ -10,6 +10,7 @@
         // déclaration d'un tableau 
         let tableau = ["moussa", 13, true, "Diallo"];
         var tableau2 = new Array("Pathe", "Alioune", "Marie");
+        let entiers = [12, -8, 50, 6];
 
         // la taille ou le nombre d'élèments du tableau 
         document.write(`La taille du tableau de ${tableau.length} élèments`)
@@ -29,9 +30,22 @@
         // supprimer le dernier élèment 
         tableau.pop();
 
+        // inversion 
+        entiers.reverse();
+
+        // trier un tableau 
+        entiers.sort((a, b) => {
+            return b - a;
+        })
+
+        // ajouter, modifier ou supprimer 
+        entiers.splice(1, 0, 20); // ajouter
+        entiers.splice(2, 1, 13); // modifier
+        entiers.splice(4, 1); // supprimer
+
         // parcours du tableau 
-        for(let i = 0; i < tableau.length; i++){
-            document.write(tableau[i] + ' - ');
+        for(let i = 0; i < entiers.length; i++){
+            document.write(entiers[i] + '  ');
         }
     </script>
 </body>
