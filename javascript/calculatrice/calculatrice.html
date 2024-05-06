@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="calculatrice.css">
+</head>
+<body>
+    <div id="calculatrice">
+        <div id="entete"></div>
+        <div id="boutons">
+            <button class="btn red" onclick="effacer()">Clear</button>
+            <button class="btn"  onclick="ajouterOpt('/')">/</button>
+            <button class="btn"  onclick="ajouterOpt('x')">*</button>
+            <button class="btn" onclick="ajouter('7')">7</button>
+            <button class="btn" onclick="ajouter('8')">8</button>
+            <button class="btn"  onclick="ajouter('9')">9</button>
+            <button class="btn" onclick="ajouterOpt('-')">-</button>
+            <div class="trio">
+                <button class="btn"  onclick="ajouter('4')">4</button>
+                <button class="btn" onclick="ajouter('5')">5</button>
+                <button class="btn" onclick="ajouter('6')">6</button>
+            </div>
+            <button class="btn green" onclick="ajouterOpt('+')">+</button>
+            <div class="trio " id="second">
+                <button class="btn" onclick="ajouter('1')">1</button>
+                <button class="btn" onclick="ajouter('2')">2</button>
+                <button class="btn" onclick="ajouter('3')">3</button>
+            </div>
+
+            <div class="trio">
+                <button class="btn" onclick="ajouter('0')">0</button>
+                <button class="btn" onclick="ajouter('00')">00</button>
+                <button class="btn" onclick="ajouter('.')">,</button>
+                <button class="btn blue" onclick="calculer()">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="calculatrice.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traitement d'un formulaire en javascript</title>
+</head>
+<body>
+    <form action="">
+        <label for="">Prenom</label><br>
+        <input type="text" value="Bassirou" id="prenom"><br>
+        <label for="">Nom</label><br>
+        <input type="text" id="nom"><br>
+        <label for="">Email</label><br>
+        <input type="email" id="email"><br>
+        <label for="">Mot de passe</label><br>
+        <input type="password" id="mdp"><br>
+        <label for="">Sexe</label><br>
+        M<input type="radio" value="homme" name="sexe"> 
+        F <input type="radio" value="femme" name="sexe"><br>
+        <label for="">Pays</label><br>
+        <select name="" id="pays">
+            <option value="">Selectionner un pays</option>
+            <option value="Senegal">Senegal</option>
+            <option value="Mali">Mali</option>
+            <option value="Gambie">Gambie</option>
+        </select><br><br>
+        <button type="submit" id="envoyer">Envoyer</button>
+        <button type="reset">Annuler</button>
+    </form>
+</body>
+
+<script>
+    let prenom = document.getElementById("prenom");
+    let nom = document.getElementById("nom");
+    let btn = document.getElementById("envoyer");
+    let mdp = document.getElementById("mdp");
+    let email = document.getElementById("email");
+    let sexes = document.getElementsByName("sexe");
+    let pays = document.getElementById("pays");
+
+
+    // lecture seule 
+    // prenom.readOnly = true;
+
+    // desactiver 
+    prenom.disabled = true;
+
+
+    prenom.addEventListener("mouseleave", function(e){
+        // console.log(prenom.value); 
+
+        nom.value = "AMar";
+    })
+
+    btn.addEventListener("click", (e)=>{
+        console.log(`
+            Prenom: ${prenom.value}
+            Nom: ${nom.value}
+            Mot de passe: ${mdp.value}
+            Email: ${email.value}
+        `); 
+
+        for (let i = 0; i < sexes.length; i++) {
+            if (sexes[i].checked) {
+                console.log(sexes[i].value);
+            }            
+        }
+
+    console.log(pays.options[pays.selectedIndex].value);
+
+    // el.options[el.selectedIndex].value
+
+        e.preventDefault();
+    })
+</script>
+</html>

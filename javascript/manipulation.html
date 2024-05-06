@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulation du code html par le js</title>
+    <style>
+        .classe1{
+            box-shadow: 1px 1px 3px #ccc;
+            padding: 10px;
+        }
+
+        .classe2{
+            background: radial-gradient(green, red);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titre">Mon titre <span>numero 1</span></h1>
+    <p class="myclass">mon paragraphe </p>
+    <a href="https://youtube.com" id="lien" class="myclass">Cliquer pour surfer sur youtube</a>
+    <p id="para" class="classe1">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+
+    <script>
+        // window.confirm("Êtes-vous sûr de vouloir supprimer");
+        let titre = document.getElementById("titre");
+        let myclasses = document.getElementsByClassName("myclass");
+        let paragraphes = document.getElementsByTagName("p");
+
+        let lien = document.getElementById("lien");
+
+        let para = document.getElementById("para");
+
+        let prenom = "Modou";
+
+        prenom = "Astou";
+
+        console.log(paragraphes[1]);
+
+        titre.innerHTML = "Introduction";
+        console.log(titre.innerText);
+        console.log(titre.innerHTML);
+
+        lien.href = "https://facebook.com"
+
+        lien.target = "_blank";
+        lien.style.textDecoration = "none";
+        lien.style.fontSize = "72px";
+        lien.style.background = "orange";
+
+        lien.setAttribute("target", "");
+        console.log(lien.href);
+        console.log(lien.getAttribute("style"));
+        console.log(lien.style);
+
+        console.log(para.className);
+        // para.className = "classe2";
+        para.classList.add("classe2");
+        // para.classList.remove("classe1");
+
+        let link = document.createElement("a");
+
+        let linkText = document.createTextNode("Cliquer pour aller sur le site de sunucode");
+
+        link.appendChild(linkText);
+
+        para.appendChild(link);
+
+        link.href="https://sunucode.com";
+        link.style.color ="orange";
+    </script>
+</body>
+</html>
