@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nombreDeVoyelles = (chaine)=>{
+            chaine = chaine.toLowerCase();
+            let nbVoyelles = 0;
+            for (let i = 0; i < chaine.length; i++) {
+                if (chaine[i] == 'a' || chaine[i] == 'o' || chaine[i] == 'i' || chaine[i] == 'e' || chaine[i] == 'u'|| chaine[i] == 'y') {
+                    nbVoyelles++;
+                }
+            }
+
+            document.write(`${chaine} comporte ${nbVoyelles} voyelle(s)`);
+        }
+
+        let c = prompt("Entrer une chaine de caractère");
+
+        nombreDeVoyelles(c);
+    </script>
+</body>
+</html>

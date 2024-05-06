@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les chaines de caractères</title>
+</head>
+<body>
+    
+    <script>
+        let ma_chaine = " Je suis une chaine de caractères ";
+        let prenom = "Modou", nom = "sow";
+
+        // enlever l'espace en debut et en fin de mot 
+        ma_chaine = ma_chaine.trim()
+        // la taille 
+        document.write(`${ma_chaine} contient ${ma_chaine.length} caractères`)
+        // pour recupérer le premier caractère 
+        document.write(`<br>${ma_chaine.charAt(0)}`)
+        document.write(`<br>${ma_chaine[5]}`)
+        // pour recupérer le dernier caractère 
+        document.write(`<br>${ma_chaine.charAt(ma_chaine.length - 1)}`)
+        // pour concatener 
+        prenom = prenom.concat(" ", nom);
+        // prenom = prenom + " "+ nom ;
+        document.write(`<br>${prenom}`)
+        // tester le debut ou la fin d'une chaine de caractères 
+        let tel = "75021";
+
+        if (tel.startsWith("75")) {
+            document.write(`<br>${tel} commence par 75`)
+        }else{
+            document.write(`<br>${tel} ne commence pas par 75`)
+        }
+
+        if (tel.endsWith("0021")) {
+            document.write(`<br>${tel} termine par 0021`)
+        }else{
+            document.write(`<br>${tel} ne termine pas par 0021`)
+        }
+
+        // compléter une chaine de caractères
+        document.write(`<br>${tel.padEnd(9, "*")}`)
+        document.write(`<br>${tel.padStart(9, "x")}`)
+
+        // minuscule ou majuscule 
+        document.write(`<br>${ma_chaine.toLowerCase()}`)
+        document.write(`<br>${ma_chaine.toUpperCase()}`)
+        // répéter une chaine de caractères n fois 
+        document.write(`<br>${prenom.repeat(10).toUpperCase()}`)
+        // replacer des caractères dans une chaine 
+        document.write(`<br>${prenom.replace("M", "B")}`)
+        document.write(`<br>${prenom.replaceAll("o", "a")}`)
+        // extraire une sous chaine dans une chaine de caractères 
+        document.write(`<br>${ma_chaine.substr(12, 6)}`)
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
