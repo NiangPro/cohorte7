@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="horloge"></div>
+
+    <script>
+        let horloge = document.getElementById("horloge");
+
+        setInterval(function(){
+            let d = new Date();
+
+             horloge.innerText = `${d.getHours()}h:${d.getMinutes()}mn:${d.getSeconds()}s`;
+        }, 1000)
+        
+    </script>
+</body>
+</html>

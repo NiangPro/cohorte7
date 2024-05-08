@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La gestion du temps</title>
+</head>
+<body>
+    <script>
+        let d = new Date();
+        // d.setMonth(7);
+
+        document.write(d)
+        document.write("<br>Heures : "+d.getHours())
+        document.write("<br>minutes : "+d.getMinutes())
+        document.write("<br>secondes : "+d.getSeconds())
+        document.write("<br>Mois : "+d.getMonth())
+        document.write("<br>Jour : "+d.getDay())
+        document.write("<br>Jour : "+d.getDate())
+        document.write("<br>Jour : "+d.getFullYear())
+        document.write(`<br>${d.getHours()}h:${d.getMinutes()}mn:${d.getSeconds()}s`)
+
+
+        setTimeout(function(){
+            alert("Bienvenu !")
+        }, 5000);
+
+        setInterval(() => {
+            console.log("bonjour");
+        }, 1000);
+
+    </script>
+</body>
+</html>

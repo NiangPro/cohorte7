@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let d = new Date();
+
+        let mois = "", jour = "";
+        let tabJours = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
+        let tabMois = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Decembre"];
+
+        tabJours.forEach(function(j , pos){
+            if (d.getDay() == (pos + 1)) {
+                jour = j;
+            }
+        });
+
+        for (let i = 0; i < tabMois.length; i++) {
+            if (d.getMonth() == i) {
+                mois = tabMois[i];
+            }
+        }
+
+
+        document.write(`${jour} ${d.getDate()} ${mois} ${d.getFullYear()}`)
+    </script>
+</body>
+</html>
